@@ -1,5 +1,8 @@
 "use client"
 import { useState } from "react"
+import { useRouter } from "next/router";
+
+// const router = useRouter();
 
 export default function signup(){
     const [username, setusername] = useState("");
@@ -21,6 +24,7 @@ export default function signup(){
                     <button onClick={() => {
                         console.log(username, password)
                     }} className="border border-white p-2 rounded-2xl cursor-pointer">SignUp</button>
+
                 </div>
             </div>
         </div>
